@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Iqbal-Farooq/Quote-app/static/css/main.b98fbe2e.css",
+    "main.js": "/Iqbal-Farooq/Quote-app/static/js/main.6400045b.js",
+    "index.html": "/Iqbal-Farooq/Quote-app/index.html",
+    "main.b98fbe2e.css.map": "/Iqbal-Farooq/Quote-app/static/css/main.b98fbe2e.css.map",
+    "main.6400045b.js.map": "/Iqbal-Farooq/Quote-app/static/js/main.6400045b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b98fbe2e.css",
+    "static/js/main.6400045b.js"
+  ]
+}

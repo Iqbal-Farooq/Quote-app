@@ -62,10 +62,12 @@ export const quoteSlice=createSlice({
           currentYear += Math.floor(Math.random() * 10); 
           let maxYearOffset = currentYear - 1900;
           currentYear -= Math.floor(Math.random() * (maxYearOffset + 1));   
+          let likes=Math.floor(Math.random()*100);
+          let disikes=Math.floor(Math.random()*50);
           return {
             ...item,
-            likes: 0,
-            dislikes: 0,
+            likes: likes,
+            dislikes: disikes,
             year: currentYear,
             month: months[month % 12], 
             day: currentday % 30 + 1, 

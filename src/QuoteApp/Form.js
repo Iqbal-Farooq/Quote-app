@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { adddislikes, addlikes,removeItem,insertnewdata } from "./Store/Slices/FetchQuotes";
+import { Icon } from "../Assets";
 import { useSelector, useDispatch } from "react-redux";
 const Form = ({ onClose }) => {
   const [formdata, setFormdata] = useState({
@@ -40,12 +41,14 @@ const Form = ({ onClose }) => {
       let currentYear=(time.getFullYear());
       const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
       let currentMonth=months[month]
+      let likes=Math.floor(Math.random()*5);
+          let disikes=Math.floor(Math.random()*2);
       let data={
         id:state.quotesdata.length+1,
         quote:formdata.quote,
         author:formdata.author,
-        likes:0,
-        dislikes:0,
+        likes:likes,
+        dislikes:disikes,
         year:currentYear,
         month:currentMonth,
         day:currentday,
@@ -169,6 +172,7 @@ const Form = ({ onClose }) => {
               className="bg-[#a91ce6] hover:bg-[#ba38f2] active:bg-[#9923cc] px-2 py-1 text-white text-sm rounded-sm"
               onClick={EraseFormData}
             >
+              
               Cancel
             </button>
           </div>
